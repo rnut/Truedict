@@ -20,6 +20,8 @@
 -(id)init;
 -(void)openDB;
 -(void)closeDB;
-//-(void)queryWithString:(NSString*)query;
+
 -(void)queryWithString:(NSString*)query;
+-(int)checkNumRecordWithTable:(NSString*)table Condition:(NSString*)condition;
+-(int)getLastRecordIDWithTable:(NSString*)table Column:(NSString*)col;
 @end

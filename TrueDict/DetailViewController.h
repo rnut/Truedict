@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Vocab.h"
 #import "Favorite.h"
+#import "History.h"
 @interface DetailViewController : UIViewController
 
 

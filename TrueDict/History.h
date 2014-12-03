@@ -10,9 +10,13 @@
 #import "Vocab.h"
 #import "DB.h"
 @interface History : NSObject
-
--(int)checkRecordHistory;
--(BOOL)keepHistory:(Vocab *)voc;
--(BOOL)clearHistory;
--(void)showHistory;
+{
+    int ID_his;
+    Vocab *Voc;
+}
+@property(nonatomic,assign)int ID_his;
+@property(nonatomic,strong)Vocab *Voc;
+-(id)initWithVocab:(Vocab *)voc;
++(NSMutableArray *)listHistoryByLanguage:(DictLanguage)lang;
+-(BOOL)clearHistoryWithLanguage:(DictLanguage)lang;
 @end

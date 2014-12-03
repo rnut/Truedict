@@ -22,6 +22,7 @@
     //[a loadSound];
 //    NSMutableArray *arr = [Vocab listDictByVocab:@"test" Lang:LanguageENG];
     NSMutableArray *arr = [Favorite listFavorite:LanguageTHA];
+    History
 }
 
 - (void)didReceiveMemoryWarning {
